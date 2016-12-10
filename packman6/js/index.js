@@ -205,6 +205,5 @@ document.addEventListener("DOMContentLoaded", function()
     var gameStateUpdater = new GameStateUpdateSystem(canvas);
     new EndGameSystem(canvas, canvasContext);
     startGame(canvas, gameStateDrawer, gameStateUpdater);
-
 });
 

@@ -68,9 +68,7 @@ function upButtonsHandler(directionCode, packman)
 
 function startGame(gameStateDrawer)
 {
-    var packman = new Packman(0, 0, PACKMAN_CONST);
-    setHandlers(packman);
-    /* Кроссбраузерный старый способ
+    /*
     var NEW_FRAME_DELAY = 16;
     var gameInterval = setInterval(function()
     {
@@ -79,6 +77,8 @@ function startGame(gameStateDrawer)
 
     }, NEW_FRAME_DELAY);
     */
+    var packman = new Packman(0, 0, PACKMAN_CONST);
+    setHandlers(packman);
     gameTick();
     function gameTick()
     {
